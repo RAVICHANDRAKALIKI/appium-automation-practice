@@ -1,0 +1,49 @@
+DEBUG   2020-09-23 02:40:28,119 [main] FirstAppium  - API Demos
+DEBUG   2020-09-23 02:40:28,137 [main] FirstAppium  - Animation
+DEBUG   2020-09-23 02:40:28,158 [main] FirstAppium  - Auto Complete
+DEBUG   2020-09-23 02:40:28,175 [main] FirstAppium  - Buttons
+DEBUG   2020-09-23 02:40:28,190 [main] FirstAppium  - Chronometer
+DEBUG   2020-09-23 02:40:28,209 [main] FirstAppium  - Controls
+DEBUG   2020-09-23 02:40:28,226 [main] FirstAppium  - Custom
+DEBUG   2020-09-23 02:40:28,246 [main] FirstAppium  - Date Widgets
+DEBUG   2020-09-23 02:40:28,268 [main] FirstAppium  - Drag and Drop
+DEBUG   2020-09-23 02:40:28,288 [main] FirstAppium  - Expandable Lists
+DEBUG   2020-09-23 02:40:28,312 [main] FirstAppium  - Focus
+DEBUG   2020-09-23 02:40:28,335 [main] FirstAppium  - Gallery
+DEBUG   2020-09-23 02:40:28,358 [main] FirstAppium  - Game Controller Input
+DEBUG   2020-09-23 02:40:28,383 [main] FirstAppium  - Grid
+DEBUG   2020-09-23 02:40:28,401 [main] FirstAppium  - Hover Events
+DEBUG   2020-09-23 02:45:01,653 [main] FirstAppium  - API Demos
+DEBUG   2020-09-23 02:45:01,677 [main] FirstAppium  - Animation
+DEBUG   2020-09-23 02:45:01,702 [main] FirstAppium  - Auto Complete
+DEBUG   2020-09-23 02:45:01,726 [main] FirstAppium  - Buttons
+DEBUG   2020-09-23 02:45:01,747 [main] FirstAppium  - Chronometer
+DEBUG   2020-09-23 02:45:01,765 [main] FirstAppium  - Controls
+DEBUG   2020-09-23 02:45:01,786 [main] FirstAppium  - Custom
+DEBUG   2020-09-23 02:45:01,808 [main] FirstAppium  - Date Widgets
+DEBUG   2020-09-23 02:45:01,839 [main] FirstAppium  - Drag and Drop
+DEBUG   2020-09-23 02:45:01,865 [main] FirstAppium  - Expandable Lists
+DEBUG   2020-09-23 02:45:01,889 [main] FirstAppium  - Focus
+DEBUG   2020-09-23 02:45:01,918 [main] FirstAppium  - Gallery
+DEBUG   2020-09-23 02:45:01,942 [main] FirstAppium  - Game Controller Input
+DEBUG   2020-09-23 02:45:01,963 [main] FirstAppium  - Grid
+DEBUG   2020-09-23 02:45:01,988 [main] FirstAppium  - Hover Events
+DEBUG   2020-09-23 02:45:05,020 [main] FirstAppium  - 15
+DEBUG   2020-09-23 02:45:05,068 [main] FirstAppium  - (732, 792)
+DEBUG   2020-09-23 02:46:55,206 [main] FirstAppium  - API Demos
+DEBUG   2020-09-23 02:46:55,229 [main] FirstAppium  - Animation
+DEBUG   2020-09-23 02:46:55,253 [main] FirstAppium  - Auto Complete
+DEBUG   2020-09-23 02:46:55,271 [main] FirstAppium  - Buttons
+DEBUG   2020-09-23 02:46:55,289 [main] FirstAppium  - Chronometer
+DEBUG   2020-09-23 02:46:55,311 [main] FirstAppium  - Controls
+DEBUG   2020-09-23 02:46:55,330 [main] FirstAppium  - Custom
+DEBUG   2020-09-23 02:46:55,351 [main] FirstAppium  - Date Widgets
+DEBUG   2020-09-23 02:46:55,373 [main] FirstAppium  - Drag and Drop
+DEBUG   2020-09-23 02:46:55,388 [main] FirstAppium  - Expandable Lists
+DEBUG   2020-09-23 02:46:55,403 [main] FirstAppium  - Focus
+DEBUG   2020-09-23 02:46:55,420 [main] FirstAppium  - Gallery
+DEBUG   2020-09-23 02:46:55,438 [main] FirstAppium  - Game Controller Input
+DEBUG   2020-09-23 02:46:55,458 [main] FirstAppium  - Grid
+DEBUG   2020-09-23 02:46:55,482 [main] FirstAppium  - Hover Events
+DEBUG   2020-09-23 02:46:58,467 [main] FirstAppium  - 15
+DEBUG   2020-09-23 02:46:58,513 [main] FirstAppium  - (732, 792)
