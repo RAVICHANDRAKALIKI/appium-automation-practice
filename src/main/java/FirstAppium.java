@@ -4,6 +4,9 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.appium.java_client.service.local.AppiumDriverLocalService;
+import io.appium.java_client.service.local.AppiumServiceBuilder;
+import io.appium.java_client.service.local.flags.GeneralServerFlag;
 import io.appium.java_client.touch.LongPressOptions;
 import io.appium.java_client.touch.TapOptions;
 import io.appium.java_client.touch.offset.ElementOption;
@@ -13,10 +16,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.slf4j.LoggerFactoryFriend;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.net.MalformedURLException;
-import java.net.URL;
 import java.time.Duration;
 import java.util.List;
 
@@ -27,13 +32,36 @@ public class FirstAppium {
 
     static Logger log = LoggerFactory.getLogger("FirstAppium");
 
-    public static void main(String[] args) throws MalformedURLException {
+    public static void main(String[] args) {
+
+        AppiumDriverLocalService appium = new AppiumServiceBuilder().withArgument(GeneralServerFlag.LOG_NO_COLORS).build();
+        //AppiumDriverLocalService appium2 = AppiumDriverLocalService.buildDefaultService();
+        try {
+            appium.addOutPutStream(new FileOutputStream("logs/appium.log"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        appium.start();
+        try {
+            run(appium);
+        } catch (Exception e) {
+
+        }
+        finally {
+            appium.stop();
+        }
+
+    }
+
+    private static void run(AppiumDriverLocalService appium) {
         File apk = new File("src/main/resources/ApiDemos-debug.apk");
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"Pixel_3a_API_30");
-        desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"uiautomator2");
+        desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2");
         desiredCapabilities.setCapability(MobileCapabilityType.APP, apk.getAbsolutePath());
-        AndroidDriver<AndroidElement> driver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), desiredCapabilities);
+        // This is the way to run the program if the appium server is started on the host manually
+        // AndroidDriver<AndroidElement> driver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), desiredCapabilities);
+        AndroidDriver<AndroidElement> driver = new AndroidDriver(appium,desiredCapabilities);
 
         WebElement textElement = driver.findElement(By.xpath("//android.widget.TextView[@text='Text']"));
         textElement.click();
@@ -72,16 +100,6 @@ public class FirstAppium {
 
         // perform drag and drop
 
-
-
-
-
-
-
-
-
-
-
         // scrolling behaviour
         //        driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0))"
         //                + ".scrollIntoView(new UiSelector().text(\"TextSwitcher\").instance(0));").click();
@@ -106,7 +124,7 @@ public class FirstAppium {
                 LongPressOptions.longPressOptions()
                         .withElement(ElementOption.element(longPressButton))
                         .withDuration(Duration.ofSeconds(2)))
-            .release().perform();
+                .release().perform();
         List<AndroidElement> longPressMenuItems = driver.findElementsById("android:id/title");
         Assertions.assertTrue(longPressMenuItems.size() == 2);
         Assertions.assertTrue(longPressMenuItems.get(1).getText().equals("Menu B"));
@@ -115,6 +133,8 @@ public class FirstAppium {
         for (int i = 0; i < 4; i++) {
             driver.pressKey(new KeyEvent(BACK));
         }
+
+        driver.quit();
 
     }
 }
