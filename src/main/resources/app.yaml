@@ -1,4 +1,9 @@
-run: real-apk-run
+#run: real-apk-run
+#apk: ./src/main/resources/ApiDemos-debug.apk
+
+run: emulator-apk-run
 apk: ./src/main/resources/ApiDemos-debug.apk
+emulator: Pixel_3a_API_30
+
 #run: real-browser-run
 #browser: src/main/resources/ApiDemos-debug.apk

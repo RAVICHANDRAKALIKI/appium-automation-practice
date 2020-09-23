@@ -17,3 +17,38 @@ DEBUG   2020-09-24 00:27:08,603 [main] FirstAppium  - Grid
 DEBUG   2020-09-24 00:27:08,628 [main] FirstAppium  - Hover Events
 DEBUG   2020-09-24 00:27:11,974 [main] FirstAppium  - 15
 DEBUG   2020-09-24 00:27:12,015 [main] FirstAppium  - (732, 792)
+DEBUG   2020-09-24 00:58:47,088 [main] FirstAppium  - API Demos
+DEBUG   2020-09-24 00:58:47,105 [main] FirstAppium  - Animation
+DEBUG   2020-09-24 00:58:47,119 [main] FirstAppium  - Auto Complete
+DEBUG   2020-09-24 00:58:47,135 [main] FirstAppium  - Buttons
+DEBUG   2020-09-24 00:58:47,147 [main] FirstAppium  - Chronometer
+DEBUG   2020-09-24 00:58:47,159 [main] FirstAppium  - Controls
+DEBUG   2020-09-24 00:58:47,173 [main] FirstAppium  - Custom
+DEBUG   2020-09-24 00:58:47,189 [main] FirstAppium  - Date Widgets
+DEBUG   2020-09-24 00:58:47,205 [main] FirstAppium  - Drag and Drop
+DEBUG   2020-09-24 00:58:47,219 [main] FirstAppium  - Expandable Lists
+DEBUG   2020-09-24 00:58:47,234 [main] FirstAppium  - Focus
+DEBUG   2020-09-24 00:58:47,255 [main] FirstAppium  - Gallery
+DEBUG   2020-09-24 00:58:47,278 [main] FirstAppium  - Game Controller Input
+DEBUG   2020-09-24 00:58:47,300 [main] FirstAppium  - Grid
+DEBUG   2020-09-24 00:58:47,324 [main] FirstAppium  - Hover Events
+DEBUG   2020-09-24 00:58:50,445 [main] FirstAppium  - 15
+DEBUG   2020-09-24 00:58:50,485 [main] FirstAppium  - (732, 792)
+DEBUG   2020-09-24 00:59:36,201 [main] EmulatorNativeApp  - apk:./src/main/resources/ApiDemos-debug.apk
+DEBUG   2020-09-24 00:59:50,939 [main] SampleAppTest  - API Demos
+DEBUG   2020-09-24 00:59:50,964 [main] SampleAppTest  - Animation
+DEBUG   2020-09-24 00:59:50,984 [main] SampleAppTest  - Auto Complete
+DEBUG   2020-09-24 00:59:51,007 [main] SampleAppTest  - Buttons
+DEBUG   2020-09-24 00:59:51,026 [main] SampleAppTest  - Chronometer
+DEBUG   2020-09-24 00:59:51,046 [main] SampleAppTest  - Controls
+DEBUG   2020-09-24 00:59:51,070 [main] SampleAppTest  - Custom
+DEBUG   2020-09-24 00:59:51,095 [main] SampleAppTest  - Date Widgets
+DEBUG   2020-09-24 00:59:51,121 [main] SampleAppTest  - Drag and Drop
+DEBUG   2020-09-24 00:59:51,147 [main] SampleAppTest  - Expandable Lists
+DEBUG   2020-09-24 00:59:51,169 [main] SampleAppTest  - Focus
+DEBUG   2020-09-24 00:59:51,197 [main] SampleAppTest  - Gallery
+DEBUG   2020-09-24 00:59:51,216 [main] SampleAppTest  - Game Controller Input
+DEBUG   2020-09-24 00:59:51,236 [main] SampleAppTest  - Grid
+DEBUG   2020-09-24 00:59:51,255 [main] SampleAppTest  - Hover Events
+DEBUG   2020-09-24 00:59:54,457 [main] SampleAppTest  - 15
+DEBUG   2020-09-24 00:59:54,513 [main] SampleAppTest  - (732, 792)
