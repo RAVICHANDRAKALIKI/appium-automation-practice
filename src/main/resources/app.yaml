@@ -1,0 +1,4 @@
+run: real-apk-run
+apk: ./src/main/resources/ApiDemos-debug.apk
+#run: real-browser-run
+#browser: src/main/resources/ApiDemos-debug.apk
